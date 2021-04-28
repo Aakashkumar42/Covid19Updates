@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_home_black_18dp"
+        android:title="Home"
+         />
+    <item
+        android:id="@+id/navigation_cases"
+        android:icon="@drawable/world"
+        android:title="World Cases"
+         />
+    <item
+        android:id="@+id/navigation_statewise"
+        android:icon="@drawable/flag"
+        android:title="India wise"
+         />
+    <item
+        android:id="@+id/contact_phone"
+        android:icon="@drawable/contact_phone"
+        android:title="Help Lines"
+         />
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+
+            />
+
+
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    >
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStateName"
+        android:layout_gravity="center_vertical"
+        android:text="State Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingLeft="5dp"
+        />
+
+    <TextView
+       android:id="@+id/tvdailyCases"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Newcas"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorButton"
+        />
+    <TextView
+        android:id="@+id/tvStateCases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cases"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:paddingRight="15dp"
+        android:textColor="@color/one_colors"
+        />
+ </LinearLayout>

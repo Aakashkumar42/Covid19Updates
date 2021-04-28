@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.coronavirus_updates.Acivities.LoginActivity">
+
+<ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:visibility="gone"
+    android:id="@+id/progress_bar"
+    />
+   <Button
+       android:id="@+id/loginwithfacebook"
+       android:layout_width="130dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/com_facebook_button_background"
+       android:text="Login "
+       android:textAllCaps="false"
+       android:textColor="@color/com_facebook_button_text_color"
+       android:drawableLeft="@drawable/com_facebook_button_icon"
+       android:paddingLeft="20dp"
+       android:layout_marginLeft="90dp"
+       android:layout_alignParentBottom="true"
+       android:layout_toRightOf="@id/sign_in_button"
+       android:layout_marginBottom="80dp"
+       />
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_in_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp">
+
+    </com.google.android.gms.common.SignInButton>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:maxLines="1"
+            android:elevation="12dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/edittextshap"
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="User Name"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:minLines="1"
+            android:paddingLeft="15dp"
+            />
+        <EditText
+            android:layout_marginLeft="15dp"
+        android:background="@drawable/edittextshap"
+            android:id="@+id/editTextpwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="password"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            />
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/signup_btn"
+            android:id="@+id/signinBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="signin"
+            android:textColor="@color/dashbroadBackground"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:padding="30dp"
+            android:textAlignment="center"
+            android:textColor="#212121"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="are you not registered?"
+            android:id="@+id/loginlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="signUpLink"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.example.coronavirus_updates.Acivities.IndiaDetailsActivity">
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lastUpdate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Last Update Time"
+        android:textColor="#212121"
+        android:textSize="15sp"
+       android:textStyle="bold"
+        />
+    <TextView
+        android:layout_toRightOf="@id/lastUpdate"
+        android:id="@+id/lastUpdatetime"
+        android:layout_width="200dp"
+        android:text="Last update time"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCases"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="2dp"
+
+        >
+        <RelativeLayout
+            android:background="@color/one_colors"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvConfirmCases"
+            android:text="Total Cases"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@id/tvConfirmCases"
+                android:id="@+id/ConfirmCases"
+                android:text="Total Cases"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_toRightOf="@id/cardCases"
+        android:id="@+id/cardRecovered"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="2dp"
+
+        >
+    <RelativeLayout
+        android:background="@color/recovered"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvtotalRecovered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total Recovered"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_below="@id/tvtotalRecovered"
+            android:id="@+id/totalRecovered"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Total Recovered"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_toRightOf="@id/cardRecovered"
+        android:id="@+id/cardDeaths"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="2dp"
+
+
+        >
+        <RelativeLayout
+            android:background="@color/colorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvtotaldeath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="New Cases"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+
+            />
+            <TextView
+                android:layout_below="@id/tvtotaldeath"
+                android:id="@+id/todayCases"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="New Cases"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+    android:id="@+id/linerLayout"
+    android:layout_below="@id/cardDeaths"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/two_colors"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Total Deaths"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tvdeaths"
+                android:textAlignment="textEnd"
+                android:textColor="@color/one_colors"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/two_colors"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Active Cases"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/active"
+                android:textAlignment="textEnd"
+                android:textColor="@color/one_colors"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/two_colors"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Daily Recovered"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/deltarecovered"
+                android:textAlignment="textEnd"
+                android:textColor="@color/one_colors"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/two_colors"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/two_colors"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDistrict"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/linerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here more Details"
+        android:gravity="center"
+        android:textColor="@color/colorNavi"
+        android:textStyle="bold"
+        android:textSize="20sp"
+         android:onClick="DistrictWise"
+        />
+    <View
+        android:layout_below="@id/tvDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/two_colors"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Total Deaths"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/tvdeathsDis"
+            android:textAlignment="textEnd"
+            android:textColor="@color/one_colors"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/two_colors"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <LinearLayout
+
+        android:id="@+id/linerLayoutDis"
+        android:layout_below="@id/cardDeaths"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Active Cases"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/activeDis"
+            android:textAlignment="textEnd"
+            android:textColor="@color/one_colors"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/two_colors"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Daily Recovered"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/deltarecoveredDis"
+            android:textAlignment="textEnd"
+            android:textColor="@color/one_colors"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/two_colors"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    </LinearLayout>
+</RelativeLayout>

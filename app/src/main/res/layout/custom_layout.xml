@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/headerpart"
+        app:cardBackgroundColor="#94BDEE"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardUseCompatPadding="true"
+        android:paddingBottom="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView_Name"
+            android:text="Central Helpline Number for corona-virus"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+
+            android:layout_below="@id/textView_Name"
+            android:id="@+id/textView_No"
+            android:text="+91-11-23978046"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/headerpart"
+        app:cardBackgroundColor="#EACBF5 "
+        app:cardUseCompatPadding="true"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        app:cardCornerRadius="20dp"
+        android:padding="5dp"
+        >
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="#212121"
+                android:text="State Name:"
+                android:id="@+id/textViewName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_toRightOf="@id/textViewName"
+                android:textColor="#212121"
+                android:text="StateName"
+                android:id="@+id/text_stateName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@id/textViewName"
+                android:textColor="#212121"
+                android:text="Contact No:"
+                android:id="@+id/textView_stateName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_toRightOf="@id/textView_stateName"
+                android:layout_below="@id/text_stateName"
+                android:textColor="#212121"
+                android:text="helplineNo:"
+                android:id="@+id/text_helpLineNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

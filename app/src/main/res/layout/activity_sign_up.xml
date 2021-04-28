@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.coronavirus_updates.com.example.coronavirus_updates.Acivities.SignUpActivity">
+<LinearLayout
+    android:id="@+id/linerLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    >
+
+    <EditText
+        android:layout_marginLeft="15dp"
+        android:background="@color/colorEditText"
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        />
+    <EditText
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/colorEditText"
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginRight="15dp"
+        />
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorButton"
+        android:id="@+id/signupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="signup"
+        />
+    <TextView
+        android:padding="30dp"
+        android:textAlignment="center"
+        android:textColor="#212121"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="Already Registered?"
+        android:id="@+id/loginlink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</RelativeLayout>

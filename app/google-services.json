@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "447517181388",
+    "firebase_url": "https://coronavirusupdates-2883b.firebaseio.com",
+    "project_id": "coronavirusupdates-2883b",
+    "storage_bucket": "coronavirusupdates-2883b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447517181388:android:f8c33a8a4c50476240c969",
+        "android_client_info": {
+          "package_name": "com.example.coronavirus_updates"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447517181388-lur5c406ihh7krtkeh0k4dtue675aojo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.coronavirus_updates",
+            "certificate_hash": "14ab2b08a66a4c8a5a0a2338e4a85cbb1a1cb7c2"
+          }
+        },
+        {
+          "client_id": "447517181388-utpd6leph2nrnmo3b4tm6foshdo716ks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDufb_oBF3s5J5k_lVvQvt0ubdicIphMHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447517181388-utpd6leph2nrnmo3b4tm6foshdo716ks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447517181388:android:ddd2d9c8592d36af40c969",
+        "android_client_info": {
+          "package_name": "com.example.officail_ignou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447517181388-pdqim33ibhge377gi91budea7rccbmp7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.officail_ignou",
+            "certificate_hash": "14ab2b08a66a4c8a5a0a2338e4a85cbb1a1cb7c2"
+          }
+        },
+        {
+          "client_id": "447517181388-utpd6leph2nrnmo3b4tm6foshdo716ks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDufb_oBF3s5J5k_lVvQvt0ubdicIphMHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447517181388-utpd6leph2nrnmo3b4tm6foshdo716ks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,4 +3,19 @@
     <color name="colorPrimary">#1D76D1</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#1D76D1</color>
+    <color name="colorEditText">#CDB1F0F0</color>
+    <color name="colorButton">#FA910C</color>
+    <color name="colorNavi">#278be3</color>
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+    <color name="colorBackground">#1B9CD8</color>
+    <color name="dashbroadBackground">#E9E9EE</color>
+    <color name="one_colors">#F70C26</color>
+    <color name="two_colors">#E4E2E2</color>
+
+
+    <color name="cases">#FFA726</color>
+    <color name="recovered">#66BB6A</color>
+    <color name="deaths">#EF5350</color>
+    <color name="active">#29B6F6</color>
 </resources>

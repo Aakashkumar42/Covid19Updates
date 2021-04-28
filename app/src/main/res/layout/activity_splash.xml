@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
+    tools:context="com.example.coronavirus_updates.Acivities.SplashActivity"
     android:orientation="vertical"
     android:background="#ffffff"
     >
@@ -13,9 +13,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:src="@drawable/logo_ignou"
+        android:src="@drawable/covid"
         android:scaleType="centerCrop"
-        android:padding="25dp"
+        android:padding="26dp"
         android:layout_marginTop="60dp"
         
 

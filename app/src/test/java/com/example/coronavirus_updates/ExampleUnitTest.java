@@ -1,4 +1,4 @@
-package com.example.officail_ignou;
+package com.example.coronavirus_updates;
 
 import org.junit.Test;
 

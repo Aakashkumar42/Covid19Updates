@@ -1,10 +1,12 @@
-package com.example.officail_ignou;
+package com.example.coronavirus_updates.Acivities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.example.coronavirus_updates.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -23,7 +25,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(3000);
-                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    startActivity(new Intent(getApplicationContext(),LoginActivity.class));
                     finish();
                 } catch (InterruptedException e) {
                     e.printStackTrace();

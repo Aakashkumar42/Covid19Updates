@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Officail_IGNOU</string>
+    <string name="app_name">COVID-19 UPDATES</string>
+    <string name="navi_home">navi_home</string>
+    <string name="navi_cases">navi_cases</string>
+    <string name="navi_statewise">navi_statewise</string>
+    <string name="navi_contact">navi_contact</string>
+    <string name="hello_blank_fragment">state fragment</string>
+    <string name="title_activity_my_dash_broad">mydashbroad</string>
+    <string name="Close">Close</string>
+    <string name="Open">Open</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
 </resources>
